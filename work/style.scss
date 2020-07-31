@@ -1,0 +1,284 @@
+$margin-space: 111;
+$calc: calc(0 - $margin-space);
+
+* {
+    box-sizing: border-box;
+    font-size: 103%;
+}
+
+input[type=text] {
+	width: 261px;
+	height: 57px;
+}
+
+
+
+button[type=submit] {
+	&.btn {
+		color: #fff;
+		background-color: #008489;
+		width: 172px;
+		height: 36px;
+		padding: 6px 15px;
+		font-size: 12.5px;
+		font-weight: 800;
+	}
+}
+
+
+.video-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 90%;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.video-container video {
+	/* Make video to at least 100% wide and tall */
+	min-width: 100%;
+	min-height: 100%;
+
+	/* Setting width & height to auto prevents the browser from stretching or squishing the video */
+	width: auto;
+	height: auto;
+
+	/* Center the video */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+section.main-section {
+	color: #fff;
+	height: 100vh;
+
+	& .flex-container {
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+	}
+
+	& ul {
+		display: flex;
+		justify-content: flex-end;
+		& li {
+			list-style-type: none;
+			margin-right: 2rem;
+			padding-top: 1.2rem;
+			display: block;
+		}
+	}
+
+	& .first-column svg {
+		font-size: 2rem;
+		margin: 1.5rem 0 0 1.5rem;
+	}
+}
+
+.container1 {
+	margin: 0 111px;
+}
+
+.attohome {
+	margin: 220px 0 0 300px;
+	height: 510px;
+	width: 450px;
+}
+
+.btn-light {
+	position: absolute;
+	right: 0;
+	bottom: 15%;
+	right: 2%;
+}
+
+section.kanbi {
+	& h2 {
+		text-align: center;
+	}
+
+	& img {
+		width: 426px;
+		height: 417px;
+		object-fit: cover;
+	}
+
+	& .flex-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 7rem;
+		& img:not(last-child) {
+			margin-right: 1rem;
+		}
+
+		p {
+			margin-top: .8rem;
+			text-align: center;
+		}
+	}
+}
+
+section.shucchou {
+	img {
+		width: 677px;
+		height: 625px;
+		object-fit: cover;
+	}
+
+	& .flex-container {
+		display: flex;
+	}
+}
+
+section.kokoro {
+	.flex-container {
+		display: flex;
+		margin: 20px;
+
+		& img {
+			width: 596px;
+			height: 625px;
+			object-fit: cover;
+		}
+
+		& .first-column {
+			background-color: rgb(0, 108, 112);
+			margin-right: 20px;
+			> * {
+				color: #fff;
+			}
+		}
+	}
+}
+
+.flex-class {
+	background-color: rgb(238, 236, 236);
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	& h2,
+	p,
+	a {
+		align-self: center;
+		margin: 0 200px;
+	}
+}
+
+section.souzouryoku {
+
+    & .flex-container {
+        display: flex;
+    }
+
+	img {
+		width: 677px;
+		height: 625px;
+		object-fit: cover;
+	}
+}
+
+section.anzen {
+    display: block;
+    margin: 80px -111px;
+
+    & .flex-container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 0;
+    }
+    a {
+        color: #fff;
+    }
+
+    background-color: rgb(0, 108, 112);
+    color: #fff;
+
+    & .first-column, .second-column {
+        margin: 64px 0;
+        width: 400px;
+        height: 146px;
+    }
+
+    & .first-column {
+        margin-right: 146px;
+    }
+
+    & .second-column {
+        margin-left: 146px;
+    }
+
+}
+
+section.testimonial {
+    
+
+    & .flex-container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    & img {
+        width: 596px;
+        height: 625px;
+        object-fit: cover;
+    }
+
+    & .second-column {
+        width: 664px;
+        height: 625px;
+        background-color: rgb(238, 236, 236);
+        margin-bottom: 80px;
+        margin-left: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 0 140px;
+        
+
+    }
+
+    & .testimonial-text {
+        font-size: 130%;
+        line-height: 1.75;
+    }
+}
+
+section.hatarakikata {
+    background-color: rgb(238, 236, 236);
+    margin: 0 -111px 80px -111px;
+    text-align: center;
+    padding: 48px 0;
+}
+
+footer section.links {
+    font-size: 13px;
+    & .flex-container {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        & li {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-start;
+            padding: 0;
+        }
+
+        & p {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.bold {
+    font-weight: bolder;
+}

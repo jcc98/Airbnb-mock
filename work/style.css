@@ -1,0 +1,329 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 103%;
+}
+
+input[type=text] {
+  width: 261px;
+  height: 57px;
+}
+
+button[type=submit].btn {
+  color: #fff;
+  background-color: #008489;
+  width: 172px;
+  height: 36px;
+  padding: 6px 15px;
+  font-size: 12.5px;
+  font-weight: 800;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%;
+  min-height: 100%;
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+section.main-section {
+  color: #fff;
+  height: 100vh;
+}
+
+section.main-section .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+section.main-section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+section.main-section ul li {
+  list-style-type: none;
+  margin-right: 2rem;
+  padding-top: 1.2rem;
+  display: block;
+}
+
+section.main-section .first-column svg {
+  font-size: 2rem;
+  margin: 1.5rem 0 0 1.5rem;
+}
+
+.container1 {
+  margin: 0 111px;
+}
+
+.attohome {
+  margin: 220px 0 0 300px;
+  height: 510px;
+  width: 450px;
+}
+
+.btn-light {
+  position: absolute;
+  right: 0;
+  bottom: 15%;
+  right: 2%;
+}
+
+section.kanbi h2 {
+  text-align: center;
+}
+
+section.kanbi img {
+  width: 426px;
+  height: 417px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.kanbi .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 7rem;
+}
+
+section.kanbi .flex-container img:not(last-child) {
+  margin-right: 1rem;
+}
+
+section.kanbi .flex-container p {
+  margin-top: .8rem;
+  text-align: center;
+}
+
+section.shucchou img {
+  width: 677px;
+  height: 625px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.shucchou .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.kokoro .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+}
+
+section.kokoro .flex-container img {
+  width: 596px;
+  height: 625px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.kokoro .flex-container .first-column {
+  background-color: #006c70;
+  margin-right: 20px;
+}
+
+section.kokoro .flex-container .first-column > * {
+  color: #fff;
+}
+
+.flex-class {
+  background-color: #eeecec;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.flex-class h2,
+.flex-class p,
+.flex-class a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 200px;
+}
+
+section.souzouryoku .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.souzouryoku img {
+  width: 677px;
+  height: 625px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.anzen {
+  display: block;
+  margin: 80px -111px;
+  background-color: #006c70;
+  color: #fff;
+}
+
+section.anzen .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0;
+}
+
+section.anzen a {
+  color: #fff;
+}
+
+section.anzen .first-column, section.anzen .second-column {
+  margin: 64px 0;
+  width: 400px;
+  height: 146px;
+}
+
+section.anzen .first-column {
+  margin-right: 146px;
+}
+
+section.anzen .second-column {
+  margin-left: 146px;
+}
+
+section.testimonial .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+section.testimonial img {
+  width: 596px;
+  height: 625px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.testimonial .second-column {
+  width: 664px;
+  height: 625px;
+  background-color: #eeecec;
+  margin-bottom: 80px;
+  margin-left: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 0 140px;
+}
+
+section.testimonial .testimonial-text {
+  font-size: 130%;
+  line-height: 1.75;
+}
+
+section.hatarakikata {
+  background-color: #eeecec;
+  margin: 0 -111px 80px -111px;
+  text-align: center;
+  padding: 48px 0;
+}
+
+footer section.links {
+  font-size: 13px;
+}
+
+footer section.links .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+footer section.links .flex-container li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0;
+}
+
+footer section.links .flex-container p {
+  margin-bottom: 20px;
+}
+
+.bold {
+  font-weight: bolder;
+}
+/*# sourceMappingURL=style.css.map */

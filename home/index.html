@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnbでお家、アパート、お部屋をシェアしよう</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav-container">
+        <div class="left-part">
+            <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height: 34px; width: 34px; fill: rgb(0, 132, 137);"><path d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z"></path></svg>
+                <a href="#" class="links"><span>概要</span></a>
+            <a href="#" class="links">準備</a>
+            <a href="#" class="links">安全</a>
+            <a href="#" class="links">マネープラン</a>
+        </div>
+        <div class="right-part">
+            <div class="text"><p>予想月収 <svg viewBox="0 0 24 24" role="img" aria-label="詳細はこちら" focusable="false" style="height: 11px; width: 11px; display: block; fill: rgb(72, 72, 72);"><path d="m12 0c-6.63 0-12 5.37-12 12s5.37 12 12 12 12-5.37 12-12-5.37-12-12-12zm0 23c-6.07 0-11-4.92-11-11s4.93-11 11-11 11 4.93 11 11-4.93 11-11 11zm4.75-14c0 1.8-.82 2.93-2.35 3.89-.23.14-1 .59-1.14.67-.4.25-.51.38-.51.44v2a .75.75 0 0 1 -1.5 0v-2c0-.74.42-1.22 1.22-1.72.17-.11.94-.55 1.14-.67 1.13-.71 1.64-1.41 1.64-2.61a3.25 3.25 0 0 0 -6.5 0 .75.75 0 0 1 -1.5 0 4.75 4.75 0 0 1 9.5 0zm-3.75 10a1 1 0 1 1 -2 0 1 1 0 0 1 2 0z" fill-rule="evenodd"></path></span></div>
+            <div class="button"><button>はじめる</button></div>
+        </div>
+    </nav>
+    <section class="upper-section">
+        <div class="container">
+            <div class="img"></div>
+        </div>
+        <div class="income-calculator">
+            <div class="title"><h2>Airbnbホストになって、暮らしをレベルアップ</h2></div>
+            <p>どれくらいの収入が見込めるかチェック</p>
+            <input type="text" placeholder="ロケーション">
+            <select id="income-select">
+                <option value="1">まるまる貸切</option>
+                <option value="2">個室</option>
+                <option value="3">シェアルーム</option>
+            </select>
+            <select id="income-people">
+                <option value="1">ゲスト４人</option>
+            </select>
+            <div class="calculated-price" id="calculated-price"><span class="text">月あたり</span></div>
+            <button class="calculate-price-btn">はじめる</button>
+        </div>
+    </section>
+    <section class="text-merits">
+        <div class="flex-container">
+            <div class="first-column">
+                <h3>Airbnbでホストするこれだけの理由</h3>
+                <p>どんなお家やお部屋でも、Airbnbなら簡単かつ安全にシェアでき、世界中の旅好きな仲間とつながれます。 予約可能日から料金、ハウスルール、ゲストとの交流程度まで、すべて自分で決めることができます。</p>
+            </div>
+            <div class="second-column">
+                <h3>困ったときも安心</h3>
+                <p>万一に備えるUS$1,000,000の財物補償、US$1,000,000の賠償責任保険が全予約に自動付帯。ホストのみなさまと建物・家財の安全をお守りするため全力で取り組んでいます。</p>
+            </div>
+        </div>
+    </section>
+    <section class="three-step">
+        <h1>3ステップでホスティング</h1>
+        <div class="flex-container">
+            <div class="first-column">
+                <svg viewBox="0 0 32 32" role="presentation" aria-hidden="true" focusable="false" style="height:48px;width:48px;display:block;fill:currentColor"><path d="m16 31c-8.28 0-15-6.72-15-15s6.72-15 15-15 15 6.72 15 15-6.72 15-15 15m0-31c-8.84 0-16 7.16-16 16s7.16 16 16 16 16-7.16 16-16-7.16-16-16-16m5.71 12.29c.39.39.39 1.02 0 1.41l-6 6c-.39.39-1.02.39-1.41 0l-3-3c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l2.29 2.29 5.29-5.29c.39-.39 1.02-.39 1.41 0"></path></svg>
+                <h3>無料でお部屋を掲載</h3>
+                <p>共有のリビングルームから別荘に至るまで、どんなスペースでも登録料なしで共有しましょう。</p>
+            </div>
+            <div class="second-column">
+                <svg viewBox="0 0 32 32" role="presentation" aria-hidden="true" focusable="false" style="height:48px;width:48px;display:block;fill:currentColor"><path d="m16 31c-8.28 0-15-6.72-15-15s6.72-15 15-15 15 6.72 15 15-6.72 15-15 15m0-31c-8.84 0-16 7.16-16 16s7.16 16 16 16 16-7.16 16-16-7.16-16-16-16m5.71 12.29c.39.39.39 1.02 0 1.41l-6 6c-.39.39-1.02.39-1.41 0l-3-3c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l2.29 2.29 5.29-5.29c.39-.39 1.02-.39 1.41 0"></path></svg>
+                <h3>ホスティング方法を設定</h3>
+                <p>スケジュール、料金、ゲストへの用件をご自身で選択しましょう。お困りの際にはいつでもサポートいたします。</p>
+            </div>
+            <div class="third-column">
+                <svg viewBox="0 0 32 32" role="presentation" aria-hidden="true" focusable="false" style="height:48px;width:48px;display:block;fill:currentColor"><path d="m16 31c-8.28 0-15-6.72-15-15s6.72-15 15-15 15 6.72 15 15-6.72 15-15 15m0-31c-8.84 0-16 7.16-16 16s7.16 16 16 16 16-7.16 16-16-7.16-16-16-16m5.71 12.29c.39.39.39 1.02 0 1.41l-6 6c-.39.39-1.02.39-1.41 0l-3-3c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l2.29 2.29 5.29-5.29c.39-.39 1.02-.39 1.41 0"></path></svg>
+                <h3>はじめてのゲストが来ます！</h3>
+                <p>リスティングが掲載されると、条件にかなったゲストから連絡を受けとることができます。 ゲストの到着前に質問があればメッセージを送信できます。</p>
+                <a href="#">ホストをはじめる方法をチェック</a>
+            </div>
+        </div>
+    </section>
+    <section class="testimony">
+        <div class="flex-container">
+            <div class="first-column">
+                <p class="testimony-reason"></p>
+                <p class="main-title"><span></span>
+                    「ホスト保証」があったからAirbnb参加を決めたといっても過言でないほどで、被害やトラブルがあったときに頼れるサポートがあるのは本当にありがたいですね。</p>
+                <p class="dennis">Dennisさんはロンドンのホスト。自由度の高さに魅力を感じています</p>
+                <button class="btn-style">ホスト実践例をチェック</button>
+            </div>
+            <div class="second-column">
+                <img src="https://a0.muscache.com/pictures/8e6c68cc-e714-4849-bad9-464abf58e84a.jpg">
+            </div>
+    </div>
+    </section>
+    <section class="security">
+        <h1>万一のときも安心です</h1>
+        <div class="flex-container">
+            <div class="first-column">
+                <p>大切なお家にお迎えする相手選びは、信頼第一で進めたいですよね。 その思いに応えるため、Airbnbでは宿泊者に求める厳格な要件をホスト自身の手で設定し、滞在前にお互い交流できるシステムを採用しています。 万一のトラブルのときには、Airbnbが全力でサポートします。 建物・家財の被害は「ホスト保証」、賠償責任は「ホスト補償保険」でカバー。ホストのみなさまのあらゆるシチュエーションに対処しています。</p>
+                <a href="#">ホストを守るAirbnbの仕組みをチェック</a>
+            </div>
+            <div class="second-column">
+                <div><div class="svg"><svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height:18px;width:18px;display:block;fill:#008489"><path d="m1.29 11.98c-.29-.3-.76-.31-1.06-.02s-.31.76-.02 1.06l6.75 7c .29.3.78.31 1.07.01l15.75-16c .29-.3.29-.77-.01-1.06s-.77-.29-1.06.01l-15.21 15.45z" fill-rule="evenodd"></path></svg></div>予約前に政府発行の身分証明書を求める権限</div>
+                <div><div class="svg"><svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height:18px;width:18px;display:block;fill:#008489"><path d="m1.29 11.98c-.29-.3-.76-.31-1.06-.02s-.31.76-.02 1.06l6.75 7c .29.3.78.31 1.07.01l15.75-16c .29-.3.29-.77-.01-1.06s-.77-.29-1.06.01l-15.21 15.45z" fill-rule="evenodd"></path></svg></div>ハウスルールに同意しないと泊まれない</div>
+                <div><div class="svg"><svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height:18px;width:18px;display:block;fill:#008489"><path d="m1.29 11.98c-.29-.3-.76-.31-1.06-.02s-.31.76-.02 1.06l6.75 7c .29.3.78.31 1.07.01l15.75-16c .29-.3.29-.77-.01-1.06s-.77-.29-1.06.01l-15.21 15.45z" fill-rule="evenodd"></path></svg></div>過去の宿泊のレビューもばっちり読める</div>
+                <div><div class="svg"><svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height:18px;width:18px;display:block;fill:#008489"><path d="m1.29 11.98c-.29-.3-.76-.31-1.06-.02s-.31.76-.02 1.06l6.75 7c .29.3.78.31 1.07.01l15.75-16c .29-.3.29-.77-.01-1.06s-.77-.29-1.06.01l-15.21 15.45z" fill-rule="evenodd"></path></svg></div>財物損害は¥100,000,000まで無料で補償</div>
+                <div><div class="svg"><svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height:18px;width:18px;display:block;fill:#008489"><path d="m1.29 11.98c-.29-.3-.76-.31-1.06-.02s-.31.76-.02 1.06l6.75 7c .29.3.78.31 1.07.01l15.75-16c .29-.3.29-.77-.01-1.06s-.77-.29-1.06.01l-15.21 15.45z" fill-rule="evenodd"></path></svg></div>$1,000,000の賠償責任保険が無料で付帯</div>
+                <div><div class="svg"><svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height:18px;width:18px;display:block;fill:#008489"><path d="m1.29 11.98c-.29-.3-.76-.31-1.06-.02s-.31.76-.02 1.06l6.75 7c .29.3.78.31 1.07.01l15.75-16c .29-.3.29-.77-.01-1.06s-.77-.29-1.06.01l-15.21 15.45z" fill-rule="evenodd"></path></svg></div>24時間365日対応グローバルカスタマーサポート</div>
+        </div>
+    </section>
+        <img class="folding-bed" src="https://a0.muscache.com/pictures/bb358a46-fa25-4895-b5fd-048a386bdcac.jpg">
+    <section class="simple-kessai">
+        <h1>シンプルな決済</h1>
+        <div class="flex-container">
+            <div class="first-column">
+                <h3>料金設定は完全に自由</h3>
+                <p>料金は常に自由に選択できます。 迷ったときには、 域内需要に合わせて設定できるツールがあります。</p>
+            </div>
+            <div class="second-column">
+                <h3>手数料が安い</h3>
+                <p>登録に費用は一切かかりません。Airbnbは通常、予約ごとに業界で最低の均一3％をサービス料としていただいております。</p>
+            </div>
+            <div class="third-column">
+                <h3>迅速な支払い</h3>
+                <p>ゲストのチェックイン後に、Paypal、直接振り込み、またはその他の利用可能な方法で受取金を送金できます。</p>
+                <a href="#">Airbnb収入を得るまでの流れを見る</a>
+            </div>
+        </div>
+    </section>
+    <section class="kitchen-reform">
+        <div class="flex-container">
+            <div class="first-column">
+                <img src="https://a0.muscache.com/pictures/4e8524b4-205e-4fdf-9f0a-f1f36905c8f6.jpg">
+            </div>
+            <div class="second-column">
+                <p class="main-title"><span></span>
+                    ホスト収入でキッチンリフォーム。お家をいろいろアップグレードしました。</p>
+                <p>Tessaさんはロンドン在住。ホストになって経済的なゆとりができました</p>
+                <button class="btn-style">ホスト実践例をチェック</button>
+            </div>
+        </div>
+    </section>
+    <section class="yumekyouyuu">
+        <h1>夢を共有する仲間が世界中に</h1>
+        <div class="flex-container">
+            <div class="first-column">
+                <h2>290万</h2>
+                <p>Airbnbのホスト</p>
+            </div>
+            <div class="second-column">
+                <h2>80万</h2>
+                <p>Airbnbにおける毎晩の平均宿泊数</p>
+            </div>
+            <div class="third-column">
+                <h2>14,000</h2>
+                <p>月あたりの新規登録ホスト数</p>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <h1>Airbnbについて</h1>
+        <div class="flex-container">
+            <div class="first-column">
+                <h3>Airbnbとは？</h3>
+                <p>Airbnbは世界中の宿泊先や体験と人々をつなぎます。 ホストたちが原動力となるコミュニティが、地元のように旅するユニークな機会をゲストに提供しています。</p>
+            </div>
+            <div class="second-column">
+                <h3>ホスティングとは？</h3>
+                <p>空いているお部屋やお家、得意分野があるなら、世界中の仲間とシェアして暮らしをステップアップできます。 掲載できるのはお部屋や体験です。掛け持ちもOK。 無理のないペースでできます。</p>
+                <a href="#">体験ホスティングの詳細はこちら</a>
+            </div>
+        </div>
+    </section>
+    <section class="shitsumon">
+        <h1>よくある質問</h1>
+        <div class="flex-container">
+            <div class="first-column">
+                <ul>
+                    <li><a href="#">Airbnbホストになれるのはどんな人？</a></li>
+                    <li><a href="#">予約前にゲストに求められる要件は？</a></li>
+                    <li><a href="#">お部屋の掲載料はいくら？</a></li>
+                </ul>
+            </div>
+            <div class="second-column">
+                <ul>
+                    <li><a href="#">家財破損があった場合、どのような補償がありますか？</a></li>
+                    <li><a href="#">リスティングの料金を選ぶには？</a></li>
+                    <li><a href="#">料金設定の支援ツールはありますか？</a></li>
+                </ul>
+            </div>
+        </flex>
+    </section>
+    <section class="hosting-details">
+        <h3>ホスティングの詳細はこちら</h3>
+        <div class="flex-container">
+            <div class="first-column">
+                <img src="https://a0.muscache.com/pictures/489faa5d-9519-48fa-aa0e-fe9673165e43.jpg">
+                <p class="bold">初期設定</p>
+                <p>ホスティング入門ガイド</p>
+                <a href="#">もっと詳しく</a>
+            </div>
+            <div class="second-column">
+                <img src="https://a0.muscache.com/pictures/b77eb430-aa14-4ceb-a832-109341f798cd.jpg">
+                <p class="bold">安全</p>
+                <p>ホストを守るAirbnbのしくみ</p>
+                <a href="#">もっと詳しく</a>  
+            </div>
+            <div class="third-column">
+                <img src="https://a0.muscache.com/pictures/1ad4d764-38a6-464b-8fdd-b0f3339adf2f.jpg">
+                <p class="bold">マネープラン</p>
+                <p>Airbnbで収益を得るには</p>
+                <a href="#">もっと詳しく</a>  
+            </div>
+        </div>
+    </section>
+    <section class="shuueki-img">
+        <div class="img"></div>
+        <div class="relative">
+        <h1>収益化してみますか？<br> <button>はじめる</button></h1>
+        
+    </div>
+    </section>
+    <footer>
+        <section class="links">
+            <div class="flex-container">
+                <div class="first-column">
+                    <p>Airbnb</p>
+                    <ul>
+                        <li>採用情報</li>
+                        <li>ニュース</li>
+                        <li>ポリシー</li>
+                        <li>ダイバーシティ&ビロンギング</li>
+                        <li>アクセシビリティ対応</li>
+                    </ul>
+                </div>
+                <div class="second-column">
+                    <p>スタッフのおすすめ</p>
+                    <ul>
+                        <li>信頼&安全</li>
+                        <li>お友達紹介クーポン</li>
+                        <li>ギフトカード</li>
+                        <li>Airbnb citizen</li>
+                        <li>出張</li>
+                        <li>アクティビティ</li>
+                        <li>Airbnbmag</li>
+                    </ul>
+                </div>
+                <div class="third-column">
+                    <p>ホスティング</p>
+                    <ul>
+                        <li>おもてなしの心</li>
+                        <li>ホストの責任</li>
+                        <li>コミュニティセンター</li>
+                        <li>体験を掲載</li>
+                        <li>オープンホーム</li>
+                        <li>リソースセンター <span class="shinchaku">新着</span></li>
+                    </ul>
+                </div>
+                <div class="fourth-column">
+                    <p>サポート</p>
+                    <ul>
+                        <li>ヘルプ</li>
+                        <li>エリアサポート <span class="shinchaku">新着</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="copyright">
+            <div class="flex-container">
+                <div class="first-column">
+                    <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height: 1.5em; width: 1.5em; display: block; fill: rgb(118, 118, 118);"><path d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z"></path></svg>
+                    <p>© 2020 Airbnb, Inc. All rights reserved.</p>
+                    <a href="#">利用規約</a>
+                    <a href="#">プライバシー</a>
+                    <a href="#">サイトマップ</a>
+                </div>
+                <div class="second-column">
+                    <ul>
+                        <li><svg viewBox="0 0 32 32" role="img" aria-label="Facebookへ" focusable="false" style="height: 18px; width: 18px; display: block; fill: rgb(118, 118, 118);"><path d="m8 14.41v-4.17c0-.42.35-.81.77-.81h2.52v-2.08c0-4.84 2.48-7.31 7.42-7.35 1.65 0 3.22.21 4.69.64.46.14.63.42.6.88l-.56 4.06c-.04.18-.14.35-.32.53-.21.11-.42.18-.63.14-.88-.25-1.78-.35-2.8-.35-1.4 0-1.61.28-1.61 1.73v1.8h4.52c.42 0 .81.42.81.88l-.35 4.17c0 .42-.35.71-.77.71h-4.21v16c0 .42-.35.81-.77.81h-5.21c-.42 0-.8-.39-.8-.81v-16h-2.52a.78.78 0 0 1 -.78-.78" fill-rule="evenodd"></path></svg></li>
+                        <li><svg viewBox="0 0 32 32" role="img" aria-label="Twitterへ" focusable="false" style="height: 18px; width: 18px; display: block; fill: rgb(118, 118, 118);"><path d="m31 6.36c-1.16.49-2.32.82-3.55.95 1.29-.76 2.22-1.87 2.72-3.38a13.05 13.05 0 0 1 -3.91 1.51c-1.23-1.28-2.75-1.94-4.51-1.94-3.41 0-6.17 2.73-6.17 6.12 0 .49.07.95.17 1.38-4.94-.23-9.51-2.6-12.66-6.38-.56.95-.86 1.97-.86 3.09 0 2.07 1.03 3.91 2.75 5.06-1-.03-1.92-.3-2.82-.76v.07c0 2.89 2.12 5.42 4.94 5.98-.63.17-1.16.23-1.62.23-.3 0-.7-.03-1.13-.13a6.07 6.07 0 0 0 5.74 4.24c-2.22 1.74-4.78 2.63-7.66 2.63-.56 0-1.06-.03-1.43-.1 2.85 1.84 6 2.76 9.41 2.76 7.29 0 12.83-4.01 15.51-9.3 1.36-2.66 2.02-5.36 2.02-8.09v-.46c-.03-.17-.03-.3-.03-.33a12.66 12.66 0 0 0 3.09-3.16" fill-rule="evenodd"></path></svg></li>
+                        <li><svg viewBox="0 0 24 24" role="img" aria-label="Instagramへ" focusable="false" style="height: 18px; width: 18px; display: block; fill: rgb(118, 118, 118);"><path d="m23.09.91c-.61-.61-1.33-.91-2.17-.91h-17.84c-.85 0-1.57.3-2.17.91s-.91 1.33-.91 2.17v17.84c0 .85.3 1.57.91 2.17s1.33.91 2.17.91h17.84c.85 0 1.57-.3 2.17-.91s.91-1.33.91-2.17v-17.84c0-.85-.3-1.57-.91-2.17zm-14.48 7.74c.94-.91 2.08-1.37 3.4-1.37 1.33 0 2.47.46 3.41 1.37s1.41 2.01 1.41 3.3-.47 2.39-1.41 3.3-2.08 1.37-3.41 1.37c-1.32 0-2.46-.46-3.4-1.37s-1.41-2.01-1.41-3.3.47-2.39 1.41-3.3zm12.66 11.63c0 .27-.09.5-.28.68a.92.92 0 0 1 -.67.28h-16.7a.93.93 0 0 1 -.68-.28.92.92 0 0 1 -.27-.68v-10.13h2.2a6.74 6.74 0 0 0 -.31 2.05c0 2 .73 3.71 2.19 5.12s3.21 2.12 5.27 2.12a7.5 7.5 0 0 0 3.75-.97 7.29 7.29 0 0 0 2.72-2.63 6.93 6.93 0 0 0 1-3.63c0-.71-.11-1.39-.31-2.05h2.11v10.12zm0-13.95c0 .3-.11.56-.31.77a1.05 1.05 0 0 1 -.77.31h-2.72c-.3 0-.56-.11-.77-.31a1.05 1.05 0 0 1 -.31-.77v-2.58c0-.29.11-.54.31-.76s.47-.32.77-.32h2.72c.3 0 .56.11.77.32s.31.47.31.76z" fill-rule="evenodd"></path></svg></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    
+<script src="script.js"></script>
+</body>
+</html>
